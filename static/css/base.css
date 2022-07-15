@@ -1,0 +1,17 @@
+h1 {
+  color : red;
+}
+
+.cont {
+  border: 1px solid #ccc;
+  padding: 7px;
+}
+
+i {
+  color: green;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}

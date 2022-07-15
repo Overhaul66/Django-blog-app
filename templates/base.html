@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link href="{% static 'css/base.css' %}" rel="stylesheet"  />
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  {% if user.is_authenticated %}
+  <p>Hi {{ user.username }} </p>
+  <a href = "{% url 'logout' %}">Log out</a>
+  {% else %}
+  <b>you are not logged in</b>
+  <a href="{% url 'login'%}">log in</a>
+  {% endif %}
+    {% block title %}
+    {% endblock title %}
+    <hr>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

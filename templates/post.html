@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<h3><i>{{ post.title }}</i></h3>
+{% endblock title %}
+
+{% block content %}
+<p>{{ post.content }}</p>
+<p>{{ post.author }}</p>
+<img src="{% static 'images/img.png' %}"/>
+
+<a href="{% url 'update' post.pk%}">
+  Edit + 
+</a>
+<a href="{% url 'delete' post.pk%}">delete-</a>
+{% endblock content %}

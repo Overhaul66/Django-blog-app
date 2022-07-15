@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <h3><b>Create a new post</b></h3>
+{% endblock title %}
+
+{% block content %}
+  <form action="" method="post">
+    {% csrf_token %}
+    <div id="title">Title : {{form.title}}</div>
+    <div id="author">Author : {{form.author}}</div>
+    <br>
+    <div id="cont">Content : {{ form.content }}</div>
+    
+    <input type="submit" value="save">
+  </form>
+{% endblock content %}
