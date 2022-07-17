@@ -2,6 +2,10 @@ h1 {
   color : red;
 }
 
+body {
+  background-color: #ccc;
+}
+
 .cont {
   border: 1px solid #ccc;
   padding: 7px;

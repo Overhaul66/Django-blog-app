@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link href="{% static 'css/signup.css' %}" rel="stylesheet"  />
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <h1 class="app_name">Bloggo</h1>
+  <hr>
+  <h4><i>Have an account?</i></h4>
+  <br>
+  <a href="{% url login %}">Login</a>
+  <br>
+  <h4><i>else</i></h4>
+  <a href = "{% url signup %}">signup</a>
+  
+</body>
+</html>
